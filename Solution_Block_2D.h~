@@ -1,0 +1,21 @@
+#ifndef SOLUTION_BLOCK2D_H
+#define SOLUTION_BLOCK2D_H
+
+#include<cassert>
+#include<vector>
+#include<cmath>
+#include<exception>
+
+namespace knoblauch {
+
+  class Grid_Tree_Base {
+
+    virtual Grid_Tree_Base* refine_in_I()=0;
+    virtual Grid_Tree_Base* refine_in_J()=0;
+    virtual Grid_Tree_Base* refine_in_I_and_J()=0;
+
+  };
+
+}
+
+#endif
